@@ -1,0 +1,701 @@
+<style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        
+      }
+      body {
+        background-color: #88BDBC;
+        color: #112D32;
+        font-family: Poppins, sans-serif;
+        
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: #0F292F;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        font-size: 1.02rem;
+        color: greenyellow;
+      }
+      .left {
+        font-size: 1.5rem;
+        color: white;
+        
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 70px 0;
+      }
+      .firstSection > div {
+        width: 30%;
+        margin: 70px 36px;
+      }
+      .leftSection {
+        font-size: 1.8rem;
+      }
+      .rightSection img {
+        width: 80%;
+      }
+      .sahil {
+        font-weight: bold;
+        color: white;
+      }
+      #element {
+        color: greenyellow;
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+      }
+      main hr {
+        border: 0;
+        background: rgb(255, 255, 255);
+        height: 1px;
+        margin: 40px 80px;
+      }
+      .secondSection h1 {
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+      }
+      .far {
+        color: gray;
+        font-size: 20px;
+      }
+      .yt {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 25px;
+        
+      }
+      p {
+        margin-bottom: 20px;
+        font-size: 15px;
+      }
+      .secondSection body {
+        width: 100px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        width: 350px;
+        height: 350px;
+        border-radius: 20px;
+        border: 5px solid white;
+        position: relative;
+        overflow: hidden;
+      }
+      .ytpic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        position: relative;
+      }
+      .ytbody {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        position: absolute;
+        background-color: rgb(214, 30, 30);
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        color: white;
+        padding-top: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.8s;
+      }
+      .card:hover .ytbody {
+        right: 0;
+      }
+      .dis0 {
+        text-transform: uppercase;
+        padding: 30px;
+      }
+      .dis1 {
+        text-transform: inherit;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 30px;
+      }
+      .lockpic
+      {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        position: relative;
+      }
+      .lockbody
+      {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        position: absolute;
+        background-color: rgb(58, 58, 58);
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        color: white;
+        padding-top: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.8s;
+      }
+      .card:hover .lockbody {
+        right: 0;
+      }
+      .pypic
+      {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        position: relative;
+      }
+      .pybody
+      {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        position: absolute;
+        background-color: rgb(231, 247, 10);
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        color: rgb(56, 56, 218);
+        padding-top: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.8s;
+        
+
+      }
+      .card:hover .pybody {
+        right: 0;
+      }
+      .dis0py {
+        text-transform: uppercase;
+        padding: 25px;
+      }
+      .dis1py {
+        text-transform: inherit;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 30px;
+      }
+      .popic
+      {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        position: relative;
+      }
+      .pobody
+      {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        backdrop-filter: blur(5px);
+        border-radius: 15px;
+        color: rgb(12, 12, 63);
+        padding-top: 1px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.8s;
+        
+      }
+      .card:hover .pobody {
+        right: 0;
+      }
+     
+      .Education
+      {
+        text-decoration: underline;
+        margin: 12px 60px;
+        font-size: 20px;
+        color: rgb(102, 103, 104);
+      }
+      .about-me
+      {
+        margin: 15px 60px;
+        padding-bottom: 30px;
+        font-size: 20px;
+      }
+      .about
+      {
+        margin-left: 60px;
+        color: rgb(255, 255, 255);
+      }
+      .educational-quakification
+      {
+        margin: 40px 60px;
+        color: #112D32;
+      
+
+      }
+      .school
+      {
+        margin: 3px 60px;
+      }
+      .internship
+      {
+        margin: 40px 60px;
+
+      }
+      .nextgenpro
+      {
+        font-size: 16px;
+        margin: 10px 0px;
+       color: rgb(102, 103, 104);
+      }
+      .achiv{
+        margin-left: 60px;
+        margin-bottom: 12px;
+        
+        
+      }
+      .pc{
+        color: rgb(102, 103, 104);
+        font-size: 16px;
+        margin-left: 60px;
+        
+      }
+      .programming-lan
+      {
+        margin-left: 60px;
+        margin-bottom: 10px;
+        margin-right: 60px;
+      }
+      .container
+      {
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px;
+      }
+      .skills h2
+      {
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        color: white;
+        font-size: 16px;
+      }
+      .progress-bar
+      {
+        background-color: #959595;
+        width: 600px;
+        height: 10px;
+        border-radius: 5px;
+      }
+      .progress-bar div{
+        height: 10px;
+        border-radius: 5px;
+        width: 0%;
+        
+      }
+      .progress-bar div span{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: #222;
+        float: right;
+        margin-top: -15px;
+        margin-right: -20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .c
+      {
+        background-color: blue;
+        animation: c 1s linear forwards;
+      }
+      .java
+      {
+        background-color: red;
+        animation: java 1s linear forwards;
+      }
+      .python
+      {
+        background-color: yellow;
+        animation: python 1s linear forwards;
+      }
+      .javascript
+      {
+        background-color: green;
+        animation: javascript 1s linear forwards;
+      }
+      .html
+      {
+        background-color: rgb(255, 0, 255);
+        animation: javascript 1s linear forwards;
+      }
+      .css
+      {
+        background-color: rgb(0, 225, 255);
+        animation: javascript 1s linear forwards;
+      }
+      .c span{
+        border: 1px solid blue;
+      }
+      .java span{
+        border: 1px solid red;
+      }
+      .python span{
+        border: 1px solid yellow;
+      }
+      .javascript span{
+        border: 1px solid green;
+      }
+      .html span{
+        border: 1px solid rgb(255, 0, 255);
+      }
+      .css span{
+        border: 1px solid rgb(0, 225, 255);
+      }
+      @keyframes c{
+        100%{
+          width: 75%;
+        }
+      }
+      @keyframes java{
+        100%{
+          width: 70%;
+        }
+      }
+      @keyframes python{
+        100%{
+          width: 60%;
+        }
+      }
+      @keyframes javascript{
+        100%{
+          width: 65%;
+        }
+      }
+      @keyframes html{
+        100%{
+          width: 75%;
+        }
+      } 
+      @keyframes css{
+        100%{
+          width: 70%;
+        }
+      }
+      .contact
+      {
+        color: white;
+        font-size: 20px;
+        
+      }
+      .address
+      {
+        color: #222;
+        margin-top: 15px;
+      }
+      .footer
+      {
+        background-color: rgb(18, 19, 70);
+        width: 100%;
+        padding: 50px;
+        
+
+      }
+      .footernav
+      {
+        margin: 30px 0;
+        align-items: center;
+
+      }
+      .footernav ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+        
+      }
+      .footernav ul li a{
+        color: white;
+        margin: 95px;
+        text-decoration: none;
+        font-size: 1.3em;
+        opacity: 0.7;
+        transition: 0.5s;
+      }
+      .footernav ul li a:hover{
+        opacity: 1;
+      }
+      .bottom
+      {
+        background-color: black;
+        padding: 12px 0;
+        text-align: center;
+        padding-top: 20px;
+      }
+      .hearts
+      {
+        color: red;
+      }
+      .designer
+      {
+        color: greenyellow;
+        
+      }
+      .bottom{
+        color: white;
+      }
+
+</head>
+
+  <body>
+    <header>
+      <nav>
+        <div id="home" class="left">Sahil's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi , I am <span class="sahil">Sahil</span>
+          <div> a B.tech Computer Science Graduate</div>
+          <div>who is pasionate about</div>
+          <span id="element"></span>
+        </div>
+
+        <div class="rightSection">
+          <img src="Dev png/dev1.png" alt="Developer png" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="secondSection">
+        <span class="far">What I have done so far..</span>
+        <h1 id="projects">Projects</h1>
+
+        <div class="yt">1. YouTube Clone</div>
+        <body>
+          <div class="card">
+            <img class="ytpic" src="Dev png/pngwing.com.png" alt="image of youtube" />
+            <div class="ytbody">
+              <h2 class="dis0">Youtube Clone</h2>
+              <p class="dis1">
+                Created a Clone of Front end of Youtube , <br />
+                by using html and CSS.
+              </p>
+            </div>
+          </div>
+
+
+    <div class="yt">2. LOCM'em (PASSWORD MANAGER)</div>
+    <body>
+      <div class="card">  
+        <img class="lockpic" src="Dev png/password.png" alt="photo of a lock">
+        <div class="lockbody">
+          <h2 class="dis0">LOCM'em (PASSWORD MANAGER)</h2>
+          <p class="dis1">
+            Made a password manager where user can save their passwords for convinience and is secured using 2 factor authentication. <br />
+            by using html and CSS.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="yt">3. Autonomous driving
+        obstacles avoiding car </div>
+      <body>
+        <div class="card">  
+          <img class="pypic" src="Dev png/python.png" alt="image of programming language python">
+          <div class="pybody">
+            <h2 class="dis0py">3. Autonomous driving
+              obstacles avoiding car</h2>
+            <p class="dis1py">
+             A self-driving car which can detect and avoid obstricles along the path and make alternate ways was made using arduino UNO board as processing board and python for programming it.
+            </p>
+          </div>
+        </div>
+
+        <div class="yt">4. Personal Portfolio </div>
+        <body>
+          <div class="card">  
+           <img class="popic" src="Dev png/portfolio.png" alt="image of a portfolio">
+            <div class="pobody">
+              <h2 class="dis0">4. Personal Portfolio</h2>
+              <p class="dis1">
+               A portfolio including my peronal information,skills,technical knowledge and other information was made using html,CSS and JavaScript.
+              </p>
+            </div>
+          </div>
+    
+  </section>
+
+  <hr>
+
+  <section class="thirdSection">
+    <h1 id="about" class="about">About Me</h1>
+    <body>
+       <div>
+      <p class="about-me">Computer Science and Engineering student
+        with hardworking mentality. A highly
+        organized and hard-working individual
+        looking for a responsible position to gain
+        practical experience. Forward thinking
+        professional with ability to quickly adapt to
+        newer environments. Ability to lead a team
+        of large members. Consistently expanding
+        my knowledge and skills, I embrace new
+        technologies and have a mentality to study
+        and stay at the forefront of industry
+        advancements.
+        <div class="educational-quakification">
+        <h1>Educational Qualification</h1>
+        </div>
+        <div>
+        <p class="Education">Seconday School</p>
+        <p class="school">Ideal Public School<br>
+          2007-2017
+        </p>
+        <p class="Education">Higher Secondary Education</p> 
+        <p class="school">GVHSS Thirikkara<br>
+          2017-2019</p>
+        <p class="Education">Bachelors Degree</p>
+        <p class="school">Kmea Engineering College<br>
+          2019-2023</p>
+      </div>
+    </div>
+    <div class="internship">
+      <h1>Intership</h1>
+      <p class="nextgenpro">Done intership on Machine Learning (ML) at NextGenPro Innovations and Edupark Pvt Ltd.</p>
+    </div>
+    <div>
+      <h1 class="achiv"> Academic Achievements</h1>
+      <p class="pc">>Conducted workshop on PC assembly and OS instalation.<br>
+      >Attended workshop on Android Development <br>
+    >Conducted and coordinated several blood donation and stem cell doantion camps.</p>
+    </div>
+    <div class="programming-lan">
+      <h1>Techical Skills</h1>
+      <div class="container">
+        <div class="skills">
+          <h2>C++</h2>
+          <div class="progress-bar">
+            <div class="c"><span>75%</span></div>
+          </div>
+          <h2>Java</h2>
+          <div class="progress-bar">
+            <div class="java"><span>70%</span></div>
+          </div>
+          <h2>Python</h2>
+          <div class="progress-bar">
+            <div class="python"><span>55%</span></div>
+          </div>
+          <h2>JavaScript</h2>
+          <div class="progress-bar">
+            <div class="javascript"><span>60%</span></div>
+          </div>
+          <h2>html</h2>
+          <div class="progress-bar">
+            <div class="html"><span>75%</span></div>
+          </div>
+          <h2>CSS</h2>
+          <div class="progress-bar">
+            <div class="css"><span>70%</span></div>
+          </div>
+          
+        </div>
+      </div>
+      <hr>
+      <section class="fourth-section">
+        <div class="contact">
+          <h1 id="contact">Contact Me</h1>
+          <p class="address">sahilms750@gmail.com <br>
+          +91 9746724876 <br>
+        Mockath House <br>Thiakkattukara P O Aluva <br> 683106 </p>
+        </div>
+      </section>
+    </div>
+    <footer>
+    <div class="footer">
+      
+      
+      <div class="footernav">
+        <ul>
+          <li> <a href="">Home</a></li>
+          <li> <a href="#projects">Projects</a></li>
+          <li> <a href="#contact">Contact Me</a></li>
+          <li> <a href="#about">About</a></li>
+        </ul>
+      </div>
+     
+    </div>
+    <div class="bottom">
+      <p>www.sahilmsportfolio | All rights reserved<br>
+      made with <span class="hearts"> &hearts; </span> by <span class="designer">Sahil</span></p>
+    </div>
+    </footer>
+  
+</section>
+  
+</main>
+    
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Development",
+          "Web Designing",
+          " and Front End Developement.",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+
+      
+      
+    </style>
